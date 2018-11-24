@@ -24,6 +24,7 @@ class SuggestionApp extends React.Component{
   }
   componentDidUpdate(prevProps, prevState){
     // may need on multiple page switch
+    // remove all should not print DidUpdate!!
     if(prevState.options.length !== this.state.options.length){
       console.log('saving data!');
       const json = JSON.stringify(this.state.options);
@@ -86,6 +87,10 @@ class SuggestionApp extends React.Component{
   }
 }
 
+// not using props so
+// SuggestionApp.defaultProps = {
+//   options:[]
+// }
 const Header = (props)=>{
   return (
       <div>
