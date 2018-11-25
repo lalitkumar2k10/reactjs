@@ -31,6 +31,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // note : You may need an appropriate loader for below code.
-// const template = <p>test</p>;
-const template = React.createElement('p','','test');
+const template = <p>test</p>;
+
+// without loader
+// const template = React.createElement('p','','test');
 ReactDOM.render(template,document.getElementById('app'));
+
